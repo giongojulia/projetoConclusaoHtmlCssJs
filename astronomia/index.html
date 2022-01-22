@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>home | astronomia</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon"  href="img/foguete.svg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <!-- cabeçalho com bootstrap-->
+    <header class="cabecalho">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top  shadow  mb-5 bg-body rounded">
+        <div class="container-fluid d-flex">
+          <img class="navbar-brand" src="img/foguete.svg">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#astronomia">O que é?</a>
+              <a class="nav-link" href="#curiosidade">Curiosidades</a>
+              <a class="nav-link" href="#margaret">Margaret Hamilton</a>
+              <button type="button" class="btn btn-Light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contato</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+     <!-- section principal imagem e botao -->
+    <section class="section__principal">
+     <img class="section__principal--imagem" src="img/universo.jpg">
+     <div class="botao--centro">
+        <button class="section__principal--botao" ><a  href="#astronomia">Começar</a></button>
+    </div>
+    </section>
+     <!-- section  sobre astronomia (titulo, texto e imagem )-->
+    <section class="section__introduçao  .animation--left" id="astronomia"  >
+      <h1 class="titulo"> Astronomia</h1>
+      <div class="container--flex  margim  containerres">
+        <p class="paragrafo">     Astronomia é uma ciência natural que estuda corpos celestes e fenômenos que se originam fora da atmosfera da Terra. Preocupada com a evolução, a física, a química e o movimento de objetos celestes, bem como a formação e o desenvolvimento do universo. A astronomia é uma das mais antigas ciências.</p>
+        <img class="imagem__astronauta" src="img/astronauta.webp">
+      </div>
+    </section>
+     <!-- curiosides (titulo e 6 cards com bootstrap)  -->
+    <section class="section__curiosidades  animation--right" id="curiosidade"  >
+      <h1 class="titulo"> Curiosidades</h1>
+      <div class="container--flex cards row">
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <img src="img/star.jpg" class="card-img-top altura--img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Incontáveis estrelas</h5>
+            <p class="card-text"> Estima-se que nossa galáxia apresente entre 200 e 400 bilhões de estrelas e que, no universo, existam centenas de galáxias, resultando em um número de pelo menos 10 sextilhões de estrelas.No entanto, a partir da Terra, nas melhores condições possíveis, somente cerca de 8500 estrelas são visíveis a olho nu.</p>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <img src="img/sol.jpg" class="card-img-top altura--img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">O sol</h5>
+            <p class="card-text"> O Sol é uma estrela anã de 4,6 bilhões de anos. Sozinho, apresenta 99,8% da massa de todo o Sistema Solar (cerca de 333 mil planetas Terra), garantindo que a gravidade em sua superfície chegue a 274 m/s², cerca de 27 vezes maior que a gravidade terrestre. A temperatura média de sua superfície é de 5500 ºC, enquanto o seu núcleo pode atingir incríveis 15 milhões de graus Celsius. </p>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <img src="img/galaxia.jpg" class="card-img-top altura--img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Galaxia</h5>
+            <p class="card-text"> Nossa galáxia, a Via-Láctea, tem cerca de 100 milhões de anos-luz de distância entre uma ponta e outra</p>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <img src="img/luzsolar.jpg" class="card-img-top altura--img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Luz solar</h5>
+            <p class="card-text"> A luz que sai do Sol leva cerca de 8 minutos para chegar até a Terra.</p>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <img src="img/venus.jpg" class="card-img-top altura--img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dia em Vênus</h5>
+            <p class="card-text"> Em Vênus, um dia dura mais que um ano. Isso acontece porque o período de revolução do planeta é extremamente lento.O  único planeta do nosso sistema solar que gira no sentido anti-horário – se passássemos um dia inteiro por lá, veríamos o Sol nascer no oeste e se por no leste, ao contrário do que acontece na Terra.</p>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <img src="img/coresceu.webp" class="card-img-top altura--img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Atmosfera</h5>
+            <p class="card-text"> Marte, que tem uma atmosfera composta principalmente de gás carbônico, que torna o céu com uma aparência rosada e alaranjada e, em vez de o pôr do sol ser avermelhado, lá, o horizonte fica azulado.Outro exemplo é a atmosfera de Vênus, que também é composta principalmente de gás carbônico, mas é tão espessa que o efeito estufa de lá é bem intenso. Assim, o calor fica preso e a temperatura pode chegar a atingir quase 400 graus!</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!--  section margaret (titulo, texto, imagem |  texto |  cards dos conceitos | texto)-->
+    <section class="section__margaret  .animation--left" id="margaret" >
+      <h1 class="titulo  titulo--margaret">Margaret Hamilton</h1>
+      <div class="container--flex">
+        <p class="paragrafo"> Margaret Heafield Hamilton é uma cientista da computação, engenheira de software e empresária estadunidense. Foi diretora da Divisão de Software no Laboratório de Instrumentação do MIT, que desenvolveu o programa de voo usado no projeto Apollo 11, a primeira missão tripulada à Lua. <br><br><br> Prêmio: Medalha Presidencial da Liberdade</p>
+        <img class="imagem__margaret" src="img/margaret.jpg">
+      </div>
+      <p class="paragrafo fundo">  Em 2003 a NASA em um gesto inédito, outorgou a Maragaret Hamilton o NASA Exceptional Space Act Award for scientific and technical contributions, com direito a um agrado de US$ 37.200,00. Foi a primeira e única vez que a NASA deu um prêmio em dinheiro a alguém. </p>
+      <h2 class="titulo"> Conceitos desenvolvidos </h2>
+
+      <div class="container--flex cards row ">
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">Software assíncrono</h5>
+            <p class="card-text">A programação assíncrona é um poderoso recurso da linguagem C# que permite que você continue com a execução do seu programa na thread principal enquanto uma tarefa de longa duração é executada na sua própria thread separadamente da thread principal.</p>
+            <a href="https://pt.stackoverflow.com/questions/124283/o-que-%C3%A9-o-assincronismo" class="btn botao">Ver</a>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">Priority Schedulling</h5>
+            <p class="card-text">É uma atividade organizacional feita pelo escalonador da CPU ou de um sistema distribuído, possibilitando executar os processos mais viáveis e concorrentes, priorizando determinados tipos de processos. </p>
+            <a href="#" class="btn botao">Ver</a>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">human-in-the-loop</h5>
+            <p class="card-text">O "human in the loop" é uma pessoa que treina, testa ou ajusta um sistema de IA para ajudá-lo a produzir resultados mais confiáveis.</p>
+            <a href="#" class="btn botao">Ver</a>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">end-to-end testing </h5>
+            <p class="card-text">O teste end-to-end é uma metodologia utilizada para testar se o fluxo de um aplicativo está sendo executado conforme o projeto do início ao fim. É um forma de realizar testes nas quais visam provar o sistema de uma forma mais completa simulando o ambiente real..</p>
+            <a href="#" class="btn botao">Ver</a>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">Linguagens de modelagem</h5>
+            <p class="card-text">É um linguagem artificial que pode ser utilizada para expressar informação, conhecimento ou sistemas em uma estrutura que é definida por um conjunto consistente de regras. As regras são utilizadas na interpretação do significado dos componentes da estrutura.</p>
+            <a href="#" class="btn botao">Ver</a>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">Desenvolvimento distribuído</h5>
+            <p class="card-text">O desenvolvimento distribuído de software (DDS) tem sido adotado, cada vez mais, para minimizar as dificuldades encontradas com o crescimento do mercado global e é caracterizado como uma atividade multisite, multi-cultural e globalmente distribuído.</p>
+            <a href="#" class="btn botao">Ver</a>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">Detecção e correção de erros em RTOS</h5>
+            <p class="card-text">Sistema Operativo em Tempo Real (RTOS ) é um sistema operacional destinado à execução de múltiplas tarefas onde o tempo de resposta a um evento (externo ou interno) é pré-definido; não importando, como é comum pensar-se,se a velocidade de resposta é elevada ou não. </p>
+            <a href="#" class="btn botao">Ver</a>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">Metodologias de teste e certificação</h5>
+            <p class="card-text">As técnicas de teste de software evitam transtornos, atrasos em entregas e manutenções em excesso. Mas, além disso, ajudam a tornar o projeto mais dinâmico, principalmente quando aliadas a metodologias ágeis de desenvolvimento.</p>
+            <a href="#" class="btn botao">Ver</a>
+          </div>
+        </article>
+        <article class="card tamanho col-12 col-nd-4 m-3  p-0">
+          <div class="card-body">
+            <h5 class="card-title">Automated life cycle environments</h5>
+            <p class="card-text"> Todas as atividades devem ser feitas de forma planejada e sistemática, ou seja, cada etapa precisa possui seus próprios objetivos e resultados.Em um projeto de software, os problemas podem surgir em qualquer uma das etapas do ciclo de vida. </p>
+            <a href="#" class="btn botao">Ver</a>
+          </div>
+        </article>
+      </div>
+      <p class="paragrafo">    Margaret Hamilton publicou mais de 130 papers na área de ciência da computação, cunhou o termo Engenharia de Software. Trabalhou em 60 projetos e 6 programas principais na NASA. </p>
+    </section>
+  
+<footer class="rodape"> Astronomia | 2021</footer>
+
+
+ 
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Contato</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Nome</label>
+            <input type="text" class="form-control"  id="formGroupExampleInput" placeholder="Insira seu nome">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+         
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Deixe seu comentario!</label>
+            <textarea class="form-control" placeholder= "Insira seu comentario" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        <button type="button" class="btn botao">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <script src="js/animate.js"></script>
+  </body>
+</html>

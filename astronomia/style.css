@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 56px;
+}
+
+body {
+    background-color:#c7e2fffb ;
+}
+
+/*   estilizaçoes gerais   */
+.container--flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.margim {
+    margin-bottom: 45px;
+}
+
+.containerr {
+    margin-bottom: 45px;
+}
+
+.titulo {
+    margin-bottom: 48px;
+}
+
+.paragrafo {
+    padding: 35px;
+    font-size: 1.4rem;
+    margin-bottom: 45px;
+}
+
+.tamanho {
+    width: 22rem;
+}
+
+
+
+
+
+/* section principal
+ -imagem
+ -botao */
+.section__principal {
+    position:relative;
+    text-align:center;
+}
+
+.section__principal--imagem {
+    height: 100vh;
+    width: 98.7vw;
+}
+
+.botao--centro {
+    text-align: end;
+}
+
+.section__principal--botao {
+    border-radius: 10px;
+    background: #FF1493;
+    border-color: #FF00FF;
+    color: rgb(255, 253, 253);
+    position:absolute;
+    z-index:1;
+    top:50%;            left:50%;
+    width:170px;      height:60px;            
+    padding:0;
+    margin:-15px 0 0 -30px; 
+    text-transform: uppercase;
+}
+
+.section__principal--botao a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+}
+
+.section__principal--botao:hover {
+    box-shadow: 0 0 20px #FF00FF, 0 0 50px #FF00FF, 0 0 90px #FF00FF;
+    transition-delay: 1ms;
+}
+
+/* section */
+.section__introduçao {
+    padding: 26px;
+    text-align: center;
+    background: #c7e2fffb;
+    /*background: linear-gradient(#000 1%, #c7e2fffb );
+    color: aliceblue;*/
+}
+
+
+
+/*  img  grey and hover color */
+.imagem__astronauta {
+    height: 360px;
+    padding-left: 38px;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.imagem__astronauta:hover {
+    -webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+/* sction curiosidades */
+.section__curiosidades { 
+    padding: 56px;
+    text-align: center;
+    background: #ADD8E6;
+}
+
+      /*  cards  */
+
+.card:hover{
+    border:  	#0000FF;
+}
+
+
+.altura--img {
+    height: 200px;
+    background: cover no-repeat;
+}
+
+
+/*  section margaret */
+.section__margaret { 
+    padding: 56px;
+    text-align: center;
+}
+
+.titulo--margaret {
+    color: #800000;
+}
+
+.imagem__margaret {
+    height: 22rem;
+}
+
+.fundo {
+    background-color:  #d2e8fffb;
+}
+
+.card {
+    margin: 25px;
+}
+
+.img--cards {
+    height: 130px;
+}
+
+/*  rodape */
+
+.rodape {
+    height: 55px;
+    background-color:  #8bb1dafb ;
+    text-align: center;
+}
+
+/*   modal   */
+
+
+.botao {
+    color: azure;
+    background-color: #FF1493;
+    border: #FF00FF;
+}
+
+.botao:hover {
+    box-shadow: 0 0 10px #FF00FF, 0 0 40px #FF00FF, 0 0 80px #FF00FF;
+    transition-delay: 1ms;
+}
+
+
+
+/*  responsivo */
+
+@media screen and (max-width: 600px) {
+    .section__principal--imagem{
+        height: 330px;
+    }
+
+    .section__principal--botao {
+        display: none;
+    }
+
+    .container--flex  {
+        display: block;
+    }
+
+    .imagem__astronauta  {
+        padding: 0;
+        height: 200px;
+    }
+  } 
+
+  @media screen and (max-width: 900px) {
+    .section__principal--imagem{
+        height: 470px;
+       }
+
+    .containerres {
+        display: block;
+    }
+  }
